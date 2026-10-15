@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img">
 <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#0e1730"/>
@@ -11,7 +11,7 @@
       <stop offset="0" stop-color="#3b82f6" stop-opacity="0.20"/>
       <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="clip"><rect x="0" y="0" width="1200" height="520" rx="18"/></clipPath>
+    <clipPath id="clip"><rect x="0" y="0" width="1200" height="600" rx="18"/></clipPath>
     <marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M0 0 L10 5 L0 10 z" fill="#6b7689"/>
     </marker>
@@ -25,34 +25,46 @@
     </style>
   </defs>
 <g clip-path="url(#clip)">
-<rect width="1200" height="520" fill="url(#bg)"/>
-<rect width="1200" height="520" fill="url(#glowA)"/>
-<rect width="1200" height="520" fill="url(#glowB)"/>
+<rect width="1200" height="600" fill="url(#bg)"/>
+<rect width="1200" height="600" fill="url(#glowA)"/>
+<rect width="1200" height="600" fill="url(#glowB)"/>
 <text class="lbl" x="40" y="52">// THE DEVSECOPS LAB — SERIES MAP</text>
-<circle cx="52" cy="140" r="6" fill="#22d3ee"/>
-<text class="lbl" x="70" y="145">FOUNDATIONS</text>
-<rect x="260" y="100" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#22d3ee" stroke-opacity="0.35"/>
-<text class="ttl" x="280" y="147">Local gate</text>
-<rect x="480" y="100" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#22d3ee" stroke-opacity="0.35"/>
-<text class="ttl" x="500" y="147">CI gate</text>
-<rect x="700" y="100" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#22d3ee" stroke-opacity="0.35"/>
-<text class="ttl" x="720" y="147">pre-commit</text>
-<circle cx="52" cy="280" r="6" fill="#d2a8ff"/>
-<text class="lbl" x="70" y="285">COVERAGE</text>
-<rect x="260" y="240" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
-<text class="ttl" x="280" y="287">SCA / SBOM</text>
-<rect x="480" y="240" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
-<text class="ttl" x="500" y="287">Containers</text>
-<rect x="700" y="240" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
-<text class="ttl" x="720" y="287">IaC</text>
-<rect x="920" y="240" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
-<text class="ttl" x="940" y="287">DAST</text>
-<circle cx="52" cy="420" r="6" fill="#7ee787"/>
-<text class="lbl" x="70" y="425">AGENTS</text>
-<rect x="260" y="380" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#7ee787" stroke-opacity="0.35"/>
-<text class="ttl" x="280" y="427">Build an agent</text>
-<rect x="480" y="380" width="200" height="80" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#7ee787" stroke-opacity="0.35"/>
-<text class="ttl" x="500" y="427">Red-team it</text>
+<circle cx="52" cy="119" r="6" fill="#22d3ee"/>
+<text class="lbl" x="70" y="124">FOUNDATIONS</text>
+<rect x="300" y="88" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#22d3ee" stroke-opacity="0.35"/>
+<text class="ttl" x="318" y="126">Local gate</text>
+<rect x="515" y="88" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#22d3ee" stroke-opacity="0.35"/>
+<text class="ttl" x="533" y="126">CI gate</text>
+<rect x="730" y="88" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#22d3ee" stroke-opacity="0.35"/>
+<text class="ttl" x="748" y="126">pre-commit</text>
+<circle cx="52" cy="215" r="6" fill="#d2a8ff"/>
+<text class="lbl" x="70" y="220">COVERAGE</text>
+<rect x="300" y="184" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
+<text class="ttl" x="318" y="222">SCA / SBOM</text>
+<rect x="515" y="184" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
+<text class="ttl" x="533" y="222">Containers</text>
+<rect x="730" y="184" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
+<text class="ttl" x="748" y="222">IaC</text>
+<rect x="945" y="184" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#d2a8ff" stroke-opacity="0.35"/>
+<text class="ttl" x="963" y="222">DAST</text>
+<circle cx="52" cy="311" r="6" fill="#ffab70"/>
+<text class="lbl" x="70" y="316">SUPPLY CHAIN</text>
+<rect x="300" y="280" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffab70" stroke-opacity="0.35"/>
+<text class="ttl" x="318" y="318">Pipeline security</text>
+<rect x="515" y="280" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffab70" stroke-opacity="0.35"/>
+<text class="ttl" x="533" y="318">Secrets prevention</text>
+<circle cx="52" cy="407" r="6" fill="#7ee787"/>
+<text class="lbl" x="70" y="412">OPERATIONS</text>
+<rect x="300" y="376" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#7ee787" stroke-opacity="0.35"/>
+<text class="ttl" x="318" y="414">Policy as code</text>
+<rect x="515" y="376" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#7ee787" stroke-opacity="0.35"/>
+<text class="ttl" x="533" y="414">Triage at scale</text>
+<circle cx="52" cy="503" r="6" fill="#ff7b92"/>
+<text class="lbl" x="70" y="508">AGENTS</text>
+<rect x="300" y="472" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ff7b92" stroke-opacity="0.35"/>
+<text class="ttl" x="318" y="510">Build an agent</text>
+<rect x="515" y="472" width="200" height="62" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ff7b92" stroke-opacity="0.35"/>
+<text class="ttl" x="533" y="510">Red-team it</text>
 </g>
-<rect x="0.5" y="0.5" width="1199" height="519" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+<rect x="0.5" y="0.5" width="1199" height="599" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
 </svg>
