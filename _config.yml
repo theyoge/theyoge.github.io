@@ -1,0 +1,17 @@
+# Site settings
+title: Yogender Singh
+email: imyoge10@gmail.com
+description: >-
+  Product Security Engineer specializing in offensive security, red teaming,
+  and AI-assisted penetration testing.
+baseurl: ""
+url: "https://theyoge.github.io"
+github_username: theyoge
+
+# Build settings
+markdown: kramdown
+future: true
+permalink: /writeups/:title/
+exclude:
+  - README.md
+  - .gitignore

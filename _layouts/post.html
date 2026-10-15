@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">></span>
+      <span>yogender<span class="brand-dot">.</span>singh</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/writeups/">Writeups</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+      <span class="icon-sun" aria-hidden="true"></span>
+      <span class="icon-moon" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <article class="section post">
+    <div class="wrap post-inner">
+      <header class="post-header">
+        <time class="mono muted" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>
+        <h1 class="post-title-big">{{ page.title }}</h1>
+        {% if page.tags %}
+        <div class="post-tags mono">
+          {% for tag in page.tags %}<span class="tag">#{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </header>
+      <div class="post-body">
+        {{ content }}
+      </div>
+      <footer class="post-footer">
+        <a class="btn btn-ghost" href="/writeups/">← All writeups</a>
+      </footer>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© {{ site.time | date: '%Y' }} Yogender Singh</span>
+    <a class="mono muted" href="/">← back home</a>
+  </div>
+</footer>
