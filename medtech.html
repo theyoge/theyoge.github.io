@@ -1,0 +1,77 @@
+---
+layout: default
+title: "Medical Device Security"
+permalink: /medtech/
+description: "Offensive security for the machines hospitals run on: DICOM/PACS, firmware, hardware, and wireless."
+---
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">></span>
+      <span>yogender<span class="brand-dot">.</span>singh</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/writeups/">Writeups</a>
+      <a href="/labs/">Labs</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+      <span class="icon-sun" aria-hidden="true"></span>
+      <span class="icon-moon" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-short">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="mono eyebrow"><span class="prompt">~$</span> ls ./medtech</p>
+      <h1 class="hero-title">Medical Device Security</h1>
+      <p class="hero-tagline">
+        The machines hospitals run on — imaging, monitors, implants — are a largely
+        untested attack surface. This series walks it from the software/protocol layer
+        down to the silicon.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Writeups</h2>
+      <div class="posts">
+        {% for post in site.categories.medtech %}
+        <article class="card post-item">
+          <time class="mono muted" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time>
+          <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          <a class="post-link" href="{{ post.url | relative_url }}">Read →</a>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Roadmap</h2>
+      <div class="card">
+        <ul class="tl-bullets">
+          <li><strong>DICOM/PACS</strong> — the imaging protocol and archive (in progress).</li>
+          <li><strong>Firmware</strong> — extraction, binary reversing, update-process analysis.</li>
+          <li><strong>Hardware</strong> — UART, JTAG, debug ports, memory extraction.</li>
+          <li><strong>Wireless</strong> — BLE, Wi-Fi, MQTT, and radio telemetry.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© {{ site.time | date: '%Y' }} Yogender Singh</span>
+    <a class="mono muted" href="/labs/">← all labs</a>
+  </div>
+</footer>

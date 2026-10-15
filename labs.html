@@ -1,0 +1,72 @@
+---
+layout: default
+title: "Labs & Series"
+permalink: /labs/
+description: "Hands-on learning series: DevSecOps, medical device security, and more."
+---
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">></span>
+      <span>yogender<span class="brand-dot">.</span>singh</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/writeups/">Writeups</a>
+      <a href="/labs/">Labs</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+      <span class="icon-sun" aria-hidden="true"></span>
+      <span class="icon-moon" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-short">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="mono eyebrow"><span class="prompt">~$</span> ls ./labs</p>
+      <h1 class="hero-title">Labs &amp; Series</h1>
+      <p class="hero-tagline">
+        Long-form, hands-on learning tracks. Each series is a self-contained path you can
+        follow top to bottom — start where you're curious.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="posts">
+        <article class="card post-item">
+          <p class="mono muted">series · 13 parts</p>
+          <h2 class="post-title"><a href="/lab/">The DevSecOps Lab</a></h2>
+          <p class="post-excerpt">
+            Build a shift-left security practice from nothing: a local commit gate, then CI,
+            every layer of the stack, and finally an AI security agent — which we then red-team.
+          </p>
+          <a class="post-link" href="/lab/">Explore →</a>
+        </article>
+
+        <article class="card post-item">
+          <p class="mono muted">series · medical device security</p>
+          <h2 class="post-title"><a href="/medtech/">Medical Device Security</a></h2>
+          <p class="post-excerpt">
+            Offensive security for the machines hospitals run on: DICOM/PACS, then firmware,
+            hardware (UART/JTAG), and wireless — with a path to finding real CVEs.
+          </p>
+          <a class="post-link" href="/medtech/">Explore →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© {{ site.time | date: '%Y' }} Yogender Singh</span>
+    <a class="mono muted" href="/writeups/">← all writeups</a>
+  </div>
+</footer>
