@@ -488,6 +488,30 @@ html[data-theme="light"] .icon-moon { opacity: 0.35; }
   font-weight: 700;
   margin: 26px 0 10px;
 }
+.post-body h4 {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 22px 0 10px;
+}
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 22px;
+  font-size: 0.95rem;
+}
+.post-body th, .post-body td {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.post-body thead th {
+  background: var(--surface-2);
+  color: var(--text);
+  font-weight: 600;
+}
+.post-body tbody tr:nth-child(even) { background: var(--surface); }
 .post-body ul, .post-body ol { margin: 0 0 18px 22px; }
 .post-body li { margin-bottom: 6px; }
 .post-body code {
@@ -535,6 +559,11 @@ html[data-theme="light"] .icon-moon { opacity: 0.35; }
   margin: 0 0 18px;
   color: var(--text-soft);
   font-style: italic;
+}
+.post-body hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 28px 0;
 }
 .post-body a { text-decoration: underline; text-underline-offset: 3px; }
 .post-body img { max-width: 100%; border-radius: var(--radius-sm); }
