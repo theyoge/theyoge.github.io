@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="pre-commit hook stages: fast checks on commit, message checks, heavy checks on push, and manual runs">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#0e1730"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.12" cy="0" r="0.7">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.92" cy="0.05" r="0.7">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect x="0" y="0" width="1200" height="380" rx="18"/></clipPath>
+    <style>
+      .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .name { font-family: 'Inter', -apple-system, Segoe UI, Roboto, sans-serif; fill: #e8edf6; font-size: 20px; font-weight: 700; }
+      .cat  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #8b97ab; font-size: 12.5px; letter-spacing: 0.06em; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="380" fill="url(#bg)"/>
+    <rect width="1200" height="380" fill="url(#glowA)"/>
+    <rect width="1200" height="380" fill="url(#glowB)"/>
+
+    <rect x="0" y="0" width="1200" height="48" fill="#ffffff" fill-opacity="0.04"/>
+    <line x1="0" y1="48" x2="1200" y2="48" stroke="#ffffff" stroke-opacity="0.08"/>
+    <circle cx="26" cy="24" r="6" fill="#ff5f56"/>
+    <circle cx="48" cy="24" r="6" fill="#ffbd2e"/>
+    <circle cx="70" cy="24" r="6" fill="#27c93f"/>
+    <text class="mono" x="600" y="29" text-anchor="middle" font-size="13" fill="#8b97ab">~/devsecops-lab &#8212; hooks</text>
+
+    <text class="mono" x="48" y="104" font-size="15">
+      <tspan fill="#22d3ee">$</tspan>
+      <tspan fill="#aab4c8"> pre-commit run --hook-stage pre-push</tspan>
+    </text>
+
+    <!-- Card 1: on commit -->
+    <g>
+      <rect x="70" y="140" width="250" height="180" rx="14" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+      <g transform="translate(175,174)">
+        <path d="M22 3 L8 24 H18 L14 37 L32 15 H21 Z" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linejoin="round"/>
+      </g>
+      <text class="name" x="195" y="260" text-anchor="middle">On commit</text>
+      <text class="cat"  x="195" y="288" text-anchor="middle">PRE-COMMIT</text>
+    </g>
+
+    <!-- Card 2: on message -->
+    <g>
+      <rect x="340" y="140" width="250" height="180" rx="14" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+      <g transform="translate(445,174)" fill="none" stroke="#d2a8ff" stroke-width="3" stroke-linejoin="round">
+        <path d="M6 8 h28 a4 4 0 0 1 4 4 v14 a4 4 0 0 1 -4 4 h-16 l-8 8 v-8 h-4 a4 4 0 0 1 -4 -4 v-14 a4 4 0 0 1 4 -4 z"/>
+        <path d="M13 15 h14 M13 21 h9" stroke-linecap="round"/>
+      </g>
+      <text class="name" x="465" y="260" text-anchor="middle">On message</text>
+      <text class="cat"  x="465" y="288" text-anchor="middle">COMMIT-MSG</text>
+    </g>
+
+    <!-- Card 3: on push -->
+    <g>
+      <rect x="610" y="140" width="250" height="180" rx="14" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+      <g transform="translate(715,174)" fill="none" stroke="#7ee787" stroke-width="3" stroke-linejoin="round">
+        <path d="M20 4 L35 10 V20 C35 30 28 36 20 38 C12 36 5 30 5 20 V10 Z"/>
+      </g>
+      <text class="name" x="735" y="260" text-anchor="middle">On push</text>
+      <text class="cat"  x="735" y="288" text-anchor="middle">PRE-PUSH · HEAVY</text>
+    </g>
+
+    <!-- Card 4: manual -->
+    <g>
+      <rect x="880" y="140" width="250" height="180" rx="14" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+      <g transform="translate(985,174)" fill="none" stroke="#ffab70" stroke-width="3" stroke-linejoin="round">
+        <circle cx="20" cy="20" r="16"/>
+        <path d="M16 13 L28 20 L16 27 Z" fill="#ffab70" fill-opacity="0.9"/>
+      </g>
+      <text class="name" x="1005" y="260" text-anchor="middle">On demand</text>
+      <text class="cat"  x="1005" y="288" text-anchor="middle">MANUAL</text>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1199" height="379" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+</svg>
