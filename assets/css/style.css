@@ -500,19 +500,35 @@ html[data-theme="light"] .icon-moon { opacity: 0.35; }
   color: var(--accent);
 }
 .post-body pre {
-  background: #0b1020;
+  background: #0d1526;
   border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
   border-radius: var(--radius-sm);
-  padding: 18px;
+  padding: 18px 20px;
   overflow-x: auto;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 .post-body pre code {
   background: none;
   border: none;
   padding: 0;
-  color: var(--text-soft);
+  color: #dbe6f7;
 }
+/* Rouge syntax highlighting — readable on the dark terminal background */
+.post-body pre .c,  .post-body pre .c1, .post-body pre .cm,
+.post-body pre .cd { color: #8b97ab; font-style: italic; }
+.post-body pre .s,  .post-body pre .s1, .post-body pre .s2,
+.post-body pre .sb, .post-body pre .sd { color: #7ee787; }
+.post-body pre .k,  .post-body pre .kd, .post-body pre .kn,
+.post-body pre .kc, .post-body pre .kr { color: #d2a8ff; }
+.post-body pre .na, .post-body pre .nt { color: #79c0ff; }
+.post-body pre .nf, .post-body pre .nd, .post-body pre .nb { color: #82aaff; }
+.post-body pre .mi, .post-body pre .mf, .post-body pre .m,
+.post-body pre .mh { color: #ffab70; }
+.post-body pre .pi, .post-body pre .p,  .post-body pre .o,
+.post-body pre .ow { color: #9aa7bd; }
 .post-body blockquote {
   border-left: 3px solid var(--accent);
   padding-left: 16px;
