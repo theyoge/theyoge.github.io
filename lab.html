@@ -1,0 +1,125 @@
+---
+layout: default
+title: "The DevSecOps Lab"
+permalink: /lab/
+description: "A hands-on series on building a shift-left security practice: from a local commit gate to red-teaming your own AI agents."
+---
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">></span>
+      <span>yogender<span class="brand-dot">.</span>singh</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/writeups/">Writeups</a>
+      <a href="/lab/">Lab</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+      <span class="icon-sun" aria-hidden="true"></span>
+      <span class="icon-moon" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-short">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="mono eyebrow"><span class="prompt">~$</span> ls ./lab</p>
+      <h1 class="hero-title">The DevSecOps Lab</h1>
+      <p class="hero-tagline">
+        A hands-on series that builds a shift-left security practice from nothing: a local
+        commit gate, then CI, then every layer of the stack, and finally an AI security
+        agent — which we then attack on purpose. Read it top to bottom, or jump to a layer.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <figure class="post-figure">
+        <img src="/assets/img/series-roadmap.svg" alt="Series map: foundations (local gate, CI, pre-commit), coverage (SCA, containers, IaC, DAST), and agents (build and red-team)" width="1200" height="520">
+        <figcaption>The path through the lab: foundations, coverage, then agents.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Foundations</h2>
+      <div class="posts">
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/shift-left-devsecops-lab/">Shift Left: Setting Up a DevSecOps Lab with Gitleaks, Semgrep, and Trivy</a></h2>
+          <p class="post-excerpt">A local commit gate that scans for secrets, insecure code, and vulnerable dependencies — the starting point.</p>
+          <a class="post-link" href="/writeups/shift-left-devsecops-lab/">Read →</a>
+        </article>
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/devsecops-in-ci/">From Local to CI: Running Your DevSecOps Gate on Every Pull Request</a></h2>
+          <p class="post-excerpt">Move the same gate into GitHub Actions, publish SARIF annotations, and make the check required.</p>
+          <a class="post-link" href="/writeups/devsecops-in-ci/">Read →</a>
+        </article>
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/precommit-stages-and-custom-hooks/">pre-commit, For Real: Hook Stages, Custom Hooks, and Keeping It Fast</a></h2>
+          <p class="post-excerpt">Split fast and heavy checks across commit, message, and push stages, and write your own hooks.</p>
+          <a class="post-link" href="/writeups/precommit-stages-and-custom-hooks/">Read →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Coverage</h2>
+      <div class="posts">
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/sca-sbom-dependencies/">Your Dependencies Are Your Attack Surface: SCA, SBOMs, and Knowing What Matters</a></h2>
+          <p class="post-excerpt">Inventory your dependencies, generate an SBOM, match known CVEs, and triage what actually matters.</p>
+          <a class="post-link" href="/writeups/sca-sbom-dependencies/">Read →</a>
+        </article>
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/container-hardening/">Hardening the Container: Build, Scan, and Sign Your Images</a></h2>
+          <p class="post-excerpt">Minimal base images, non-root runtime, image scanning, and signing with cosign.</p>
+          <a class="post-link" href="/writeups/container-hardening/">Read →</a>
+        </article>
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/iac-scanning/">Infrastructure as Code, Scanned: Catch Misconfigs Before terraform apply</a></h2>
+          <p class="post-excerpt">Scan Terraform and Kubernetes for the misconfigurations that create real holes — before they are applied.</p>
+          <a class="post-link" href="/writeups/iac-scanning/">Read →</a>
+        </article>
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/dast-zap/">DAST: Testing the Running App with OWASP ZAP</a></h2>
+          <p class="post-excerpt">The complement to SAST: deploy the app, scan it authenticated, and wire dynamic testing into CI.</p>
+          <a class="post-link" href="/writeups/dast-zap/">Read →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Agents</h2>
+      <div class="posts">
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/security-agents-claude-agent-sdk-mcp/">Building a Security Agent with the Claude Agent SDK and MCP</a></h2>
+          <p class="post-excerpt">Wrap your scanners as MCP tools and build an agent that triages a pull request for you.</p>
+          <a class="post-link" href="/writeups/security-agents-claude-agent-sdk-mcp/">Read →</a>
+        </article>
+        <article class="card post-item">
+          <h2 class="post-title"><a href="/writeups/red-teaming-ai-agents/">Red-Teaming an AI Agent: Prompt Injection, Tool Abuse, and the Harnesses That Find Them</a></h2>
+          <p class="post-excerpt">Attack your own agent: the common LLM attack classes, and Promptfoo, Garak, and PyRIT as a regression gate.</p>
+          <a class="post-link" href="/writeups/red-teaming-ai-agents/">Read →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© {{ site.time | date: '%Y' }} Yogender Singh</span>
+    <a class="mono muted" href="/writeups/">← all writeups</a>
+  </div>
+</footer>

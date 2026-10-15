@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="1200" height="580" role="img">
+<defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#0e1730"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.12" cy="0" r="0.7">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.92" cy="0.05" r="0.7">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect x="0" y="0" width="1200" height="580" rx="18"/></clipPath>
+    <marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b7689"/>
+    </marker>
+    <style>
+      .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .name { font-family: 'Inter', -apple-system, Segoe UI, Roboto, sans-serif; fill: #e8edf6; font-size: 20px; font-weight: 700; }
+      .cat  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #8b97ab; font-size: 12.5px; letter-spacing: 0.06em; }
+      .ttl  { font-family: 'Inter', -apple-system, Segoe UI, Roboto, sans-serif; fill: #e8edf6; font-size: 16px; font-weight: 700; }
+      .sub  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #8b97ab; font-size: 12px; }
+      .lbl  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #6b7689; font-size: 12.5px; letter-spacing: 0.08em; }
+    </style>
+  </defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="580" fill="url(#bg)"/>
+<rect width="1200" height="580" fill="url(#glowA)"/>
+<rect width="1200" height="580" fill="url(#glowB)"/>
+<text class="lbl" x="40" y="48" text-anchor="start">// ATTACK SURFACE OF AN AGENT</text>
+<rect x="70" y="80" width="250" height="66" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/><circle cx="92" cy="106" r="5" fill="#22d3ee"/><text class="ttl" x="86" y="132">user prompt</text><text class="sub" x="86" y="154">untrusted text</text>
+<line x1="195" y1="146" x2="195" y2="200" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="340" y="80" width="250" height="66" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/><circle cx="362" cy="106" r="5" fill="#d2a8ff"/><text class="ttl" x="356" y="132">PR / README text</text><text class="sub" x="356" y="154">untrusted text</text>
+<line x1="465" y1="146" x2="465" y2="200" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="610" y="80" width="250" height="66" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/><circle cx="632" cy="106" r="5" fill="#7ee787"/><text class="ttl" x="626" y="132">tool output</text><text class="sub" x="626" y="154">untrusted text</text>
+<line x1="735" y1="146" x2="735" y2="200" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="880" y="80" width="250" height="66" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/><circle cx="902" cy="106" r="5" fill="#ffab70"/><text class="ttl" x="896" y="132">web / docs</text><text class="sub" x="896" y="154">untrusted text</text>
+<line x1="1005" y1="146" x2="1005" y2="200" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="195" y1="200" x2="1005" y2="200" stroke="#6b7689" stroke-width="2"/>
+<line x1="600" y1="200" x2="600" y2="250" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="360" y="250" width="480" height="110" rx="14" fill="#79c0ff" fill-opacity="0.06" stroke="#79c0ff" stroke-opacity="0.45"/>
+<text class="ttl" x="600" y="296" text-anchor="middle">Agent</text>
+<text class="sub" x="600" y="324" text-anchor="middle">reads untrusted text as if it were instructions</text>
+<rect x="420" y="420" width="360" height="70" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/><circle cx="442" cy="446" r="5" fill="#d2a8ff"/><text class="ttl" x="436" y="472">MCP tools</text><text class="sub" x="436" y="494">scanners · actions</text>
+<line x1="590" y1="360" x2="590" y2="420" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="610" y1="420" x2="610" y2="360" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="980" y="250" width="180" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/><circle cx="1002" cy="276" r="5" fill="#ff7b92"/><text class="ttl" x="996" y="302">Attacker</text><text class="sub" x="996" y="324">receives data</text>
+<line x1="840" y1="305" x2="980" y2="305" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<text class="sub" x="910" y="296" text-anchor="middle">exfiltration</text>
+<rect x="40" y="515" width="1120" height="48" rx="14" fill="#7ee787" fill-opacity="0.05" stroke="#7ee787" stroke-opacity="0.35"/>
+<text class="sub" x="600" y="545" text-anchor="middle">Guardrails: treat all input as untrusted · least privilege · validate output · human approval</text>
+</g>
+<rect x="0.5" y="0.5" width="1199" height="579" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+</svg>
