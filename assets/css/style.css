@@ -575,6 +575,21 @@ html[data-theme="light"] .icon-moon { opacity: 0.35; }
   border-radius: var(--radius);
   margin: 0 0 28px;
 }
+.post-figure { margin: 4px 0 28px; }
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.post-figure figcaption {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: center;
+}
 .post-footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
 
 /* ---------- Reveal animation ---------- */
