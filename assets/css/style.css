@@ -567,6 +567,14 @@ html[data-theme="light"] .icon-moon { opacity: 0.35; }
 }
 .post-body a { text-decoration: underline; text-underline-offset: 3px; }
 .post-body img { max-width: 100%; border-radius: var(--radius-sm); }
+.post-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0 0 28px;
+}
 .post-footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
 
 /* ---------- Reveal animation ---------- */

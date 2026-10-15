@@ -7,6 +7,8 @@ tags: [devsecops, semgrep, gitleaks, trivy, pre-commit, sast, sca, secrets]
 description: "A beginner-friendly guide to a local DevSecOps lab: pre-commit hooks running Gitleaks, Semgrep, and Trivy on a commit, using OWASP Juice Shop as the target."
 ---
 
+<img class="post-hero" src="/assets/img/shift-left-devsecops-lab.svg" alt="DevSecOps lab: a pre-commit gate running Gitleaks, Semgrep, Trivy and pre-commit" width="1200" height="380">
+
 Most security findings are cheap to fix the moment they are written and expensive to
 fix once they ship. A leaked key is a five-second mistake that turns into a rotation
 incident. An injectable query is a one-line shortcut that becomes a production
