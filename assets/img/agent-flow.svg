@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img">
+<defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#0e1730"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.12" cy="0" r="0.7">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.92" cy="0.05" r="0.7">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect x="0" y="0" width="1200" height="260" rx="18"/></clipPath>
+    <marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b7689"/>
+    </marker>
+    <style>
+      .mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .name { font-family: 'Inter', -apple-system, Segoe UI, Roboto, sans-serif; fill: #e8edf6; font-size: 20px; font-weight: 700; }
+      .cat  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #8b97ab; font-size: 12.5px; letter-spacing: 0.06em; }
+      .ttl  { font-family: 'Inter', -apple-system, Segoe UI, Roboto, sans-serif; fill: #e8edf6; font-size: 16px; font-weight: 700; }
+      .sub  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #8b97ab; font-size: 12px; }
+      .lbl  { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; fill: #6b7689; font-size: 12.5px; letter-spacing: 0.08em; }
+    </style>
+  </defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="260" fill="url(#bg)"/>
+<rect width="1200" height="260" fill="url(#glowA)"/>
+<rect width="1200" height="260" fill="url(#glowB)"/>
+<text class="lbl" x="40" y="48">// WHAT THE AGENT DOES ON A PULL REQUEST</text>
+<rect x="40" y="100" width="142" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+<circle cx="66" cy="130" r="6" fill="#22d3ee"/>
+<text class="ttl" x="62" y="166">PR opened</text>
+<text class="sub" x="62" y="190">trigger the agent</text>
+<line x1="192" y1="155.0" x2="226" y2="155.0" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="236" y="100" width="142" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+<circle cx="262" cy="130" r="6" fill="#79c0ff"/>
+<text class="ttl" x="258" y="166">Run scanners</text>
+<text class="sub" x="258" y="190">via MCP tools</text>
+<line x1="387" y1="155.0" x2="421" y2="155.0" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="431" y="100" width="142" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+<circle cx="457" cy="130" r="6" fill="#d2a8ff"/>
+<text class="ttl" x="453" y="166">Normalize</text>
+<text class="sub" x="453" y="190">one finding list</text>
+<line x1="583" y1="155.0" x2="617" y2="155.0" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="627" y="100" width="142" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+<circle cx="653" cy="130" r="6" fill="#7ee787"/>
+<text class="ttl" x="649" y="166">Triage</text>
+<text class="sub" x="649" y="190">true / false positive</text>
+<line x1="779" y1="155.0" x2="813" y2="155.0" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="823" y="100" width="142" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+<circle cx="849" cy="130" r="6" fill="#ffab70"/>
+<text class="ttl" x="845" y="166">Explain + fix</text>
+<text class="sub" x="845" y="190">comment on the PR</text>
+<line x1="974" y1="155.0" x2="1008" y2="155.0" stroke="#6b7689" stroke-width="2" marker-end="url(#arw)"/>
+<rect x="1018" y="100" width="142" height="110" rx="12" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.09"/>
+<circle cx="1044" cy="130" r="6" fill="#ff7b92"/>
+<text class="ttl" x="1040" y="166">Human decides</text>
+<text class="sub" x="1040" y="190">approve or adjust</text>
+</g>
+<rect x="0.5" y="0.5" width="1199" height="259" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+</svg>
