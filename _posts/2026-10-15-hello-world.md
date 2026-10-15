@@ -2,6 +2,7 @@
 layout: post
 title: "Hello, World — and what this blog will be"
 date: 2026-10-15
+categories: [intro]
 tags: [intro, security, pentesting]
 description: "A short intro to what I'll be writing about."
 ---

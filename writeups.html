@@ -32,10 +32,21 @@ layout: default
 
   <section class="section">
     <div class="wrap">
+      {% if site.categories.size > 0 %}
+      <div class="filter-bar mono" role="group" aria-label="Filter writeups by category">
+        <button class="filter-chip is-active" data-filter="all" type="button">all</button>
+        {% for category in site.categories %}
+        <button class="filter-chip" data-filter="{{ category[0] | slugify }}" type="button">{{ category[0] }}</button>
+        {% endfor %}
+      </div>
+      {% endif %}
       <div class="posts">
         {% for post in site.posts %}
-        <article class="card post-item">
-          <time class="mono muted" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time>
+        <article class="card post-item" data-categories="{% for cat in post.categories %}{{ cat | slugify }}{% unless forloop.last %} {% endunless %}{% endfor %}">
+          <div class="post-meta">
+            <time class="mono muted" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time>
+            {% for cat in post.categories %}<span class="cat mono">{{ cat }}</span>{% endfor %}
+          </div>
           <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
           <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
           <a class="post-link" href="{{ post.url | relative_url }}">Read →</a>
